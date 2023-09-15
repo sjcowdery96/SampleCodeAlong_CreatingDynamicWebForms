@@ -23,18 +23,18 @@ function generateForm(items){
         document.body.append(newElementLabel,newElementInput)
     });
 }
-//runs the function for the first section up to the last three items resered for "Device Information"
+//runs the function for the first section up to the last three items reserved for "Device Information"
 generateForm(arrayForForms.slice(0,(arrayForForms.length-3)))
 
-//adds another header
+//adds another header for "Device Information"
 const header2 = document.createElement("h1")
 header2.textContent = "Device Information"
 document.body.append(header2)
 
-//runs the function for the last section (three from the end) for Device Information
+//runs the function for the last section (last three components from the end) for Device Information
 generateForm(arrayForForms.slice((arrayForForms.length-3)))
 
-//creates the last few buttons to save and close
+//creates the last few buttons for save and close
 const buttonSave = document.createElement("button")
 const buttonClose = document.createElement("button")
 buttonClose.textContent = "Close"
